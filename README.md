@@ -1,0 +1,2 @@
+# gosec
+Dockerize gosec
