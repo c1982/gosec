@@ -9,7 +9,7 @@ https://github.com/c1982/gosec/blob/master/Dockerfile
 
 ## Usages
 
-Run quicly
+Run quickly
 
 ```bash
 docker run -it -v $PROJECT_DIR:$HOME/go/src/$NAME --workdir $HOME/go/src/$NAME c1982/gs ./...
