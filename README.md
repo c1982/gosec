@@ -12,11 +12,11 @@ https://github.com/c1982/gosec/blob/master/Dockerfile
 Run quicly
 
 ```bash
-docker run -it -v $PROJECT_DIR:/go/src/$NAME --workdir /go/src/$NAME c1982/gosec ./...
+docker run -it -v $PROJECT_DIR:/go/src/$NAME --workdir /go/src/$NAME c1982/gs ./...
 ```
 
 Generate HTML report for your project
 
 ```bash
-docker run --name gosec -v $PROJECT_DIR:/go/src/$NAME --workdir /go/src/$NAME c1982/gosec -exclude=G104 -fmt=html -out=report.html ./...
+docker run --name gosec -v $PROJECT_DIR:/go/src/$NAME --workdir /go/src/$NAME c1982/gs -exclude=G104 -fmt=html -out=report.html ./...
 ```
