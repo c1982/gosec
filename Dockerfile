@@ -8,5 +8,5 @@ RUN upx /go/bin/gosec
 FROM iron/go
 
 COPY --from=builder /go/bin/gosec /usr/local/bin
-WORKDIR  /usr/local/bin
-ENTRYPOINT ["/go/bin/gosec" ]
+WORKDIR /usr/local/bin
+ENTRYPOINT ["/go/bin/gosec"]
